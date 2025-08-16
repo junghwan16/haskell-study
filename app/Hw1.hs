@@ -33,7 +33,7 @@ sumDigits (x : xs) = sumDigits (toDigits x) + sumDigits xs
 validate :: Integer -> Bool
 validate n = sumDigits (doubleEveryOther (toDigits n)) `mod` 10 == 0
 
--- Example 5: 하노이탑 예아
+-- Example 5: 하노이탑
 type Peg = String
 
 type Move = (Peg, Peg)
